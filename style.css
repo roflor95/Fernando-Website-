@@ -17,11 +17,16 @@ header {
   padding: 40px 100px;
 }
 
-header h1 {
+header a {
+  text-decoration: none;
+  color: #fff;
+}
+
+header a h1 {
   font-size: 28px;
 }
 
-header h2 {
+header  a h2 {
   font-size: 13px;
 }
 
@@ -178,7 +183,7 @@ footer {
   margin: 10px 0;
 }
 
-.contenedor-input input {
+.contenedor-input input, textarea {
   width: 128px;
   height: 22px;
   background: transparent;
@@ -192,6 +197,8 @@ footer {
   outline: none;
   margin-left: 20px;
 }
+
+
 
 .contenedor-input i {
   background: #f4f4f4;
@@ -259,6 +266,20 @@ footer {
   font-size: 8px;
 }
 
+.container-form{
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('./img/Recurso\ 1.png');
+}
+
+.section-11 a{
+  display: none;
+}
+
+
 /* SCROLL EFFECT */
 
 .js-scroll {
@@ -284,6 +305,15 @@ footer {
 
 .scrolled.slide-right {
   animation: slide-in-right 1s ease-in-out both;
+}
+@media screen and (max-width: 1050px) {
+  .container > div {
+    height: 70vh;
+    padding: 100px;
+  }
+  .section-11 {
+    height: 70vh !important;
+  }
 }
 
 @media screen and (max-width: 780px) {
@@ -319,11 +349,11 @@ footer {
   header {
     padding: 10px;
   }
-  header h1 {
+  header a h1 {
     font-size: 22px;
   }
 
-  header h2 {
+  header a h2 {
     font-size: 10px;
   }
 
@@ -337,20 +367,46 @@ footer {
     right: 20px;
   }
 
+  .iconos a i {
+    font-size: 25px ;
+  }
+  .section-4{
+    height: 80vh !important;
+  }
   .section-11 {
-    height: 70vh !important;
+    height: 30vh !important;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    align-items: flex-end;
+    align-items: center;
     cursor: default !important;
     padding: 0 !important;
   }
   .formulario {
+    display: none;
     margin-right: 10px;
     margin-bottom: 14px;
     width: 240px;
     height: 320px;
+  }
+  .formulario-contact{
+    display: block;
+    width: 80%;
+    height: 60%;
+    margin: 0 !important;
+  }
+
+  .section-11 a{
+    text-decoration: none;
+    background-color: #00bf71;
+    margin-right: 10px;
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   footer {
@@ -361,6 +417,10 @@ footer {
  
     padding: 30px 30px;
   
+  }
+
+  .tittle-footer{
+    text-align: center !important;
   }
 
   .circle {
